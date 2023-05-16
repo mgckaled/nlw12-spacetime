@@ -1,6 +1,5 @@
 <!-- markdownlint-disable MD033 -->
 <!-- markdownlint-disable MD041 -->
-<!-- markdownlint-disable MD051 -->
 
 <div align="center">
   <img alt="NLW Copa" src=".github/assets/nlw-spacetime-logo.svg" width="30%"/>
@@ -33,12 +32,12 @@
 
 <div align="center">
 
-[**Sobre o Projeto**](#🪐-sobre-o-projeto) &nbsp;&nbsp;&#124;&nbsp;&nbsp;
-[**Deploy**](#🖥️-deploy) &nbsp;&nbsp;&#124;&nbsp;&nbsp;
-[**Tecnologias**](#🚀-tecnologias) &nbsp;&nbsp;&#124;&nbsp;&nbsp;
-[**Layout**](#🔖-layout) &nbsp;&nbsp;&#124;&nbsp;&nbsp;
-[**Configurações**](#💻-configurações) &nbsp;&nbsp;&#124;&nbsp;&nbsp;
-[**Licença**](#📝-licença)
+[**Sobre o Projeto**](#sobre-o-projeto) &nbsp;&nbsp;&#124;&nbsp;&nbsp;
+[**Deploy**](#deploy) &nbsp;&nbsp;&#124;&nbsp;&nbsp;
+[**Tecnologias**](#tecnologias) &nbsp;&nbsp;&#124;&nbsp;&nbsp;
+[**Layout**](#layout) &nbsp;&nbsp;&#124;&nbsp;&nbsp;
+[**Configurações**](#configurações) &nbsp;&nbsp;&#124;&nbsp;&nbsp;
+[**Licença**](#licença)
 
 </div>
 
@@ -46,15 +45,17 @@
   <img src=".github/assets/preview.png" width="90%">
 </p>
 
-## 🪐 Sobre o Projeto
+## Sobre o Projeto
 
-`<nlw/> Spacetime` é um projeto desenvolvido durante **Next Level Week**,  evento online produzido pela [**Rocketseat**](https://www.rocketseat.com.br/).
+Aplicação de recordação de memórias, onde o usuário poderá adicionar à uma timeline textos, fotos e vídeos de acontecimentos marcantes da sua vida, organizados por mês e ano.
 
-## 🖥️ Deploy
+> `<nlw/> Spacetime` é um projeto desenvolvido durante o **Next Level Week**, evento online produzido pela [**Rocketseat**](https://www.rocketseat.com.br/).
+
+## Deploy
 
 Indisponível.
 
-## 🚀 Tecnologias
+## Tecnologias
 
 <table>
   <tbody>
@@ -66,7 +67,7 @@ Indisponível.
         <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer"><code>Javascript</code></a>
       </td>
     <tr>
-      <td style="font-weight: bold"><code>back-end (/server)</code></td>
+      <td style="font-weight: bold">back-end<code>(/server)</code></td>
       <td>
         <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer"><code>Node.JS</code></a> -
         <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer"><code>Typescript</code></a> -
@@ -76,7 +77,7 @@ Indisponível.
       </td>
     </tr>
     <tr>
-      <td style="font-weight: bold"><code>front-end (/web)</code></td>
+      <td style="font-weight: bold">front-end<code>(/web)</code></td>
       <td>
         <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer"><code>React</code></a> -
         <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer"><code>TypeScript</code></a> -
@@ -97,7 +98,7 @@ Indisponível.
 
 <br>
 
-## 🔖 Layout
+## Layout
 
 - [`Trilha IGNITE`](https://www.figma.com/community/file/1240070456276424762)
 
@@ -105,7 +106,7 @@ Indisponível.
 
 É necessário ter conta no [Figma](https://figma.com) para acessar os layouts.
 
-## 💻 Configurações
+## Configurações
 
 ### Requisitos
 
@@ -141,7 +142,7 @@ $ cd nlw12-spacetime
 # instalar dependências
 $ npm i
 # iniciar servidor
-$ npm rum dev
+$ npm run dev
 # setup prisma com flag SQLite - schema prisma file / .env
 $ npx prisma init --datasource-provider SQLite
 # migration - mecanismo de versionamento de banco de dados (arquivos de instruções)
@@ -160,7 +161,7 @@ $ npx prisma db seed
 # instalar dependências
 $ npm i
 # iniciar servidor
-$ npm rum dev
+$ npm run dev
 ```
 
 ### `/mobile`
@@ -179,7 +180,7 @@ $ npx expo login
 $ npx expo whoami
 ```
 
-## 📝 Licença
+## Licença
 
 Esse projeto está registrado sob a licença MIT.
 
