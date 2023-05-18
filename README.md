@@ -71,7 +71,9 @@ Indisponível.
       <td>
         <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer"><code>Node.JS</code></a> -
         <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer"><code>Typescript</code></a> -
+        <a href="https://httpie.io/" target="_blank" rel="noopener noreferrer"><code>httpie</code></a> -
         <a href="https://www.fastify.io/" target="_blank" rel="noopener noreferrer"><code>Fastify</code></a> -
+        <a href="https://axios-http.com/ptbr/" target="_blank" rel="noopener noreferrer"><code>Axios</code></a> -
         <a href="https://www.prisma.io/" target="_blank" rel="noopener noreferrer"><code>Prisma</code></a> -
         <a href="https://www.sqlite.org/index.html" target="_blank" rel="noopener noreferrer"><code>SQLite</code></a>
       </td>
@@ -82,13 +84,15 @@ Indisponível.
         <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer"><code>React</code></a> -
         <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer"><code>TypeScript</code></a> -
         <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer"><code>NextJS</code></a> -
-        <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer"><code>TailwindCSS</code></a>
+        <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer"><code>TailwindCSS</code></a> -
+        <a href="https://axios-http.com/ptbr/" target="_blank" rel="noopener noreferrer"><code>Axios</code></a>
       </td>
     </tr>
     <tr>
       <td style="font-weight: bold"><code>/mobile</code></td>
       <td>
         <a href="https://reactnative.dev/" target="_blank" rel="noopener noreferrer"><code>React Native</code></a> -
+        <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer"><code>TypeScript</code></a> -
         <a href="https://expo.dev/" target="_blank" rel="noopener noreferrer"><code>Expo</code></a> -
         <a href="https://www.nativewind.dev/" target="_blank" rel="noopener noreferrer"><code>NativeWind</code></a>
       </td>
@@ -147,6 +151,8 @@ $ npm run dev
 $ npx prisma init --datasource-provider SQLite
 # migration - mecanismo de versionamento de banco de dados (arquivos de instruções)
 $ npx prisma migrate dev
+# reset(caso necessário) - excluir registros do banco de dados
+$ npx prisma migrate reset
 # visualisar banco de dados - Prisma Studio
 $ npx prisma studio
 # Gerar ERD - Diagrama de Banco de Dados
