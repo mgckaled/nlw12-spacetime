@@ -7,22 +7,22 @@ import { Text, TouchableOpacity, View } from 'react-native'
 import NLWLogo from '../src/assets/nlw-spacetime-logo.svg'
 import { api } from '../src/lib/api'
 
+const discovery = {
+  authorizationEndpoint: 'https://github.com/login/oauth/authorize',
+  tokenEndpoint: 'https://github.com/login/oauth/access_token',
+  revocationEndpoint:
+    'https://github.com/settings/connections/applications/3257b33efbdf616d95ea',
+}
+
 export default function App() {
   const router = useRouter()
-
-  const discovery = {
-    authorizationEndpoint: 'https://github.com/login/oauth/authorize',
-    tokenEndpoint: 'https://github.com/login/oauth/access_token',
-    revocationEndpoint:
-      'https://github.com/settings/connections/applications/3257b33efbdf616d95ea',
-  }
 
   const [, response, signInWithGithub] = useAuthRequest(
     {
       clientId: '3257b33efbdf616d95ea',
       scopes: ['identity'],
       redirectUri: makeRedirectUri({
-        scheme: 'nwlspacetime',
+        scheme: 'nlwspacetime',
       }),
     },
     discovery,
@@ -41,12 +41,12 @@ export default function App() {
   }
 
   useEffect(() => {
-    // console.log(
-    //   'response',
-    //   makeRedirectUri({
-    //     scheme: 'nlwspacetime',
-    //   }),
-    // )
+    console.log(
+      'response',
+      makeRedirectUri({
+        scheme: 'nlwspacetime',
+      }),
+    )
 
     if (response?.type === 'success') {
       const { code } = response.params
